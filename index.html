@@ -129,7 +129,7 @@ function calculateResult() {
     document.getElementById("orderTable").appendChild(newRow);
   });
 
-  const reductionAmount = totalSum * (1 - reductionFactor);
+  const reductionAmount = totalSum * (reductionFactor);
   const netAmount = totalSum - reductionAmount;
 
   const reductionRow = document.createElement("tr");
